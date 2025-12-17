@@ -1,19 +1,36 @@
-# NumPy Program: Column-wise Sorting of a 2D Array
+# Ex 5a:NumPy Program:Variance of a NumPy Array
 
-## 🎯 Aim
-To write a **NumPy** program that sorts the elements in each column of a given 2D array in ascending order.
+## Aim
+To write a NumPy program that reads a 2D array from the user and computes its variance.
 
-## 🧠 Algorithm
+## Algorithm
 
-1. **Import NumPy**: Start by importing the NumPy library.
-2. **Get Input**: Accept a 2D NumPy array from the user.
-3. **Sort Column-wise**: Use the `np.sort()` function with `axis=0` to sort each column in ascending order.
-4. **Store Result**: Store the sorted result in a new array.
-5. **Display Output**: Print the original array and the column-wise sorted array.
+1.Start the program.
 
-## 🧾 Program
-Add code here
+2.Read the 2D list input from the user using eval().
+
+3.Convert the list into a NumPy array.
+
+4.Use numpy.var() to compute the variance.
+
+5.Display the result.
+
+6.End the program.
+
+## Program
+```
+import numpy as np
+import ast
+
+arr = np.array(ast.literal_eval(input()))
+result = np.var(arr)
+print(result)
+
+
+```
 
 ## Output
+<img width="512" height="150" alt="image" src="https://github.com/user-attachments/assets/bdd4407c-c86c-4539-8a26-d8965bd0f593" />
 
 ## Result
+Thus, the NumPy program successfully computed the variance of the given array.
