@@ -1,21 +1,28 @@
-# # NumPy Program: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y
+# Ex 5b:NumPy Program: Add 5 to NumPy elements greater than 40
 
-## 🎯 Aim
-To write a Python program using **NumPy** that finds the indices where elements in array `x` are greater than or equal to their corresponding elements in array `y`.
+## Aim
+To write a NumPy program that adds 5 to all elements of an array that are greater than 40.
 
-## 🧠 Algorithm
-1. **Import NumPy**: Import the NumPy library.
-2. **Define Arrays**: Define two NumPy arrays, `x` and `y`, with the same shape (i.e., same number of elements).
-3. **Use Boolean Indexing**: 
-   - `x > y` gives a boolean array where elements of `x` are greater than `y`.
-   - `x == y` gives a boolean array where elements of `x` are equal to `y`.
-4. **Find Indices**: Use `np.where()` to get the indices where the conditions `x >= y` are satisfied.
-5. **Print Indices**: Print the indices where the condition holds true.
+## Algorithm
 
-## 🧾 Program
+1) Start the program.
+2) Read the NumPy array from the user using eval().
+3) Convert the input into a NumPy array using np.array().
+4) Identify all elements greater than 40 using boolean indexing.
+5) Add 5 to all elements that satisfy the condition.
+6) Display the updated NumPy array.
+7) End the program.
+## Program
+```
+import numpy as np
 
-Add code here
+arr = np.array(eval(input()))
+arr[arr > 40] = arr[arr > 40] + 5
+print(arr)
+```
 
 ## Output
+<img width="679" height="155" alt="image" src="https://github.com/user-attachments/assets/30e3a6a9-28ef-44ac-b143-53b7ee6d4094" />
 
 ## Result
+Thus, the NumPy program successfully added 5 to all elements greater than 40.
